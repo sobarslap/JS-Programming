@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>⏱️ Stopwatch</h1>
+    <p>Counts in steps of 3 seconds and stops automatically at 30 seconds.</p>
+  </header>
+
+  <main>
+    <div id="stopwatchBox" class="stopwatch-box">
+      <p id="mascot" class="mascot">😴</p>
+      <p id="display" class="display">0</p>
+      <p class="seconds-label">seconds</p>
+      <div class="progress-track">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+      <p id="statusText" class="status-text">Ready when you are!</p>
+      <p id="confetti" class="confetti">🎉 🎊 🎉 🎊 🎉</p>
+      <div class="controls">
+        <button id="startBtn" onclick="startTimer()" title="Begin counting">▶ Start</button>
+        <button id="stopBtn" onclick="stopTimer()" title="Pause the timer" disabled>⏸ Stop</button>
+        <button id="resetBtn" onclick="resetTimer()" title="Reset back to 0">🔄 Reset</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>CSE 391 - Assignment 2 - Stopwatch</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
