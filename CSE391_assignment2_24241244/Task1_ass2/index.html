@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fortune Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Page</h1>
+    <p>Here is your fortune for today...</p>
+  </header>
+  <main>
+    <div class="fortune-row">
+      <div id="fortuneBox" class="fortune-box">
+        <p id="fortuneText">Loading fortune...</p>
+        <button id="newFortuneBtn" class="new-fortune-btn" onclick="showRandomFortune()" title="Show a different fortune">
+          🔄 New Fortune
+        </button>
+      </div>
+      <div class="button-group">
+        <p class="button-group-label">Customize the box:</p>
+        <button onclick="changeFontColor()" title="Change the text color">
+          <span class="btn-icon">🎨</span> Font Color
+        </button>
+        <button onclick="changeBackgroundColor()" title="Change the box background">
+          <span class="btn-icon">🖼️</span> Background
+        </button>
+        <button onclick="changeBorderColor()" title="Change the box border color">
+          <span class="btn-icon">🔲</span> Border Color
+        </button>
+        <button onclick="changeFontStyle()" title="Change the font size and family">
+          <span class="btn-icon">🔤</span> Font Style
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>CSE 391 - Assignment 2 - Fortune Generator</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
